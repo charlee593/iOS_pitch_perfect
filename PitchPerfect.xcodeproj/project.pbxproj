@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D3C778A31F709A63003CCBAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C778A21F709A63003CCBAB /* AppDelegate.swift */; };
-		D3C778A51F709A63003CCBAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C778A41F709A63003CCBAB /* ViewController.swift */; };
+		D3C778A51F709A63003CCBAB /* RecordSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C778A41F709A63003CCBAB /* RecordSoundViewController.swift */; };
 		D3C778A81F709A63003CCBAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C778A61F709A63003CCBAB /* Main.storyboard */; };
 		D3C778AA1F709A63003CCBAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C778A91F709A63003CCBAB /* Assets.xcassets */; };
 		D3C778AD1F709A63003CCBAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C778AB1F709A63003CCBAB /* LaunchScreen.storyboard */; };
+		D3E0ABC11F7459FB00145BC1 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0ABC01F7459FB00145BC1 /* PlaySoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D3C7789F1F709A63003CCBAB /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C778A21F709A63003CCBAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3C778A41F709A63003CCBAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3C778A41F709A63003CCBAB /* RecordSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundViewController.swift; sourceTree = "<group>"; };
 		D3C778A71F709A63003CCBAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3C778A91F709A63003CCBAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3C778AC1F709A63003CCBAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3C778AE1F709A63003CCBAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E0ABC01F7459FB00145BC1 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				D3C778A21F709A63003CCBAB /* AppDelegate.swift */,
-				D3C778A41F709A63003CCBAB /* ViewController.swift */,
+				D3C778A41F709A63003CCBAB /* RecordSoundViewController.swift */,
 				D3C778A61F709A63003CCBAB /* Main.storyboard */,
 				D3C778A91F709A63003CCBAB /* Assets.xcassets */,
 				D3C778AB1F709A63003CCBAB /* LaunchScreen.storyboard */,
 				D3C778AE1F709A63003CCBAB /* Info.plist */,
+				D3E0ABC01F7459FB00145BC1 /* PlaySoundsViewController.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3C778A51F709A63003CCBAB /* ViewController.swift in Sources */,
+				D3C778A51F709A63003CCBAB /* RecordSoundViewController.swift in Sources */,
+				D3E0ABC11F7459FB00145BC1 /* PlaySoundsViewController.swift in Sources */,
 				D3C778A31F709A63003CCBAB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +308,7 @@
 				D3C778B31F709A63003CCBAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
