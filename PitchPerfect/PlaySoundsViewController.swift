@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var slowButton: UIButton!
@@ -17,7 +18,15 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
-    var recordedAudioURL: URL!
+    var recordedAudioURL:URL!
+    var audioFile:AVAudioFile!
+    var audioEngine:AVAudioEngine!
+    var audioPlayerNode: AVAudioPlayerNode!
+    var stopTimer: Timer!
+    
+    enum ButtonType: Int {
+        case slow = 0, fast, chipmunk, vader, echo, reverb
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +38,13 @@ class PlaySoundsViewController: UIViewController {
         chipmuckButton.imageView?.contentMode = .scaleAspectFit
         darthButton.imageView?.contentMode = .scaleAspectFit
         fastButton.imageView?.contentMode = .scaleAspectFit
+        
+        setupAudio()
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        configureUI(.notPlaying)
     }
     
     @IBAction func playSoundForButton(_ sender: UIButton) {
