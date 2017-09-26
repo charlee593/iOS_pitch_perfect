@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLW-Yi-htF">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLW-Yi-htF">
                                 <rect key="frame" x="110" y="256" width="155" height="155"/>
                                 <state key="normal" image="RecordingButton"/>
                                 <connections>
@@ -30,6 +30,9 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="916-3Y-FD2">
                                 <rect key="frame" x="137" y="419" width="102" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mFN-KS-HrI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -53,6 +56,7 @@
                             <constraint firstItem="Wm3-PF-p91" firstAttribute="centerX" secondItem="916-3Y-FD2" secondAttribute="centerX" id="V6p-c4-spS"/>
                             <constraint firstItem="Wm3-PF-p91" firstAttribute="top" secondItem="916-3Y-FD2" secondAttribute="bottom" constant="8" id="doa-sB-l9O"/>
                             <constraint firstItem="916-3Y-FD2" firstAttribute="top" secondItem="MLW-Yi-htF" secondAttribute="bottom" constant="8" id="ec1-Tk-URk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Wm3-PF-p91" secondAttribute="bottom" id="oyG-Ir-1Th"/>
                             <constraint firstItem="916-3Y-FD2" firstAttribute="centerX" secondItem="MLW-Yi-htF" secondAttribute="centerX" id="s2M-zL-OyO"/>
                         </constraints>
                     </view>
